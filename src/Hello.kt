@@ -13,6 +13,13 @@ Kotlin Compiled to Java byte code
  */
 
 fun main(args: Array<String>) {
-    println("Hello, world!")
+    val name = "World"
+    println("Hello, $name!")
     println("It's a sunny and warm day!")
+    println("First ${foo()}, Second ${foo()}")
+}
+
+fun foo(): String {
+    println("Calculating Foo")
+    return "foo"
 }
