@@ -16,11 +16,11 @@ fun main(){
     println(c)
 
     // formatting multiline strings
-    val a ="""To code,      or not to code?.."""
+    val a ="""To code,      or not to code?..""".trimMargin()
 
     val b = """To code,
          
-        or not to code?.."""
+        or not to code?..""".trimIndent()
 
     println(a)
     println(b)
