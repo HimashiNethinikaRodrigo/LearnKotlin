@@ -1,4 +1,5 @@
 //extension function for String class.
+//extension function allow nicer and more convenient way to write function
 //Can't call private members from extension
 // Can use lastChar() function as member function
 //String - this is receiver of lastChar() function
