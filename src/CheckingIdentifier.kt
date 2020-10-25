@@ -1,4 +1,4 @@
-fun isValidIdentifier2(s: String): Boolean {
+fun isValidIdentifier1(s: String): Boolean {
     fun isValidCharacter(ch: Char)  =
         ch =='_' ||ch in 'a'..'z'
                 || ch in 'A'..'Z' || ch in '0'..'9'
@@ -17,6 +17,23 @@ fun isValidIdentifier2(s: String): Boolean {
     }
 }
 
+fun isValidIdentifier2(s: String): Boolean {
+    fun isValidCharacter(ch: Char)  =
+        ch =='_' || ch.isLetterOrDigit()
+
+    fun isValidFirstLetter (ch:Char) =
+        ch == '_' || ch.isLetter()
+
+    if (s.isEmpty() || !isValidFirstLetter(s[0]))
+        return false
+    else {
+        for (ch in s) {
+            if (!isValidCharacter(ch))
+                return false
+        }
+        return true
+    }
+}
 
 
 fun main() {
