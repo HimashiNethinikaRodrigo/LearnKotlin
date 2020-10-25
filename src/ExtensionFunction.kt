@@ -14,4 +14,14 @@ fun main(){
     //import edu.example.extensionFunction.lastChar - import like this
     val c:Char ="abcz".lastChar2()
     println(c)
+
+    // formatting multiline strings
+    val a ="""To code,      or not to code?.."""
+
+    val b = """To code,
+         
+        or not to code?.."""
+
+    println(a)
+    println(b)
 }
