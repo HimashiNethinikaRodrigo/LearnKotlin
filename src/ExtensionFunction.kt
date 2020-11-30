@@ -1,5 +1,7 @@
 //extension function for String class.
 //extension function allow nicer and more convenient way to write function
+// if we have same name member function and extension function always member function wins
+// extension can't ide a member completely, but can overload it
 // no override for extension functions in Kotlin
 //Can't call private members from extension
 // Can use lastChar() function as member function
